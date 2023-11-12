@@ -1,8 +1,9 @@
 const express = require("express");
+require("dotenv").config();
 const cors = require("cors");
 const bodyParser = require("body-parser");
 const app = express();
-const port = 8000; // You can change the port as needed
+const port = process.env.PORT||8000; // You can change the port as needed
 
 // Middleware
 app.use(cors());

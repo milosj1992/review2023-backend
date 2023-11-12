@@ -79,7 +79,6 @@ function deleteFAQCategory(req, res) {
 
 // Get list of FAQ categories
 function getFAQCategories(req, res) {
-console.log(req.query);
   const page = parseInt(req.query.page) || 1;
   let lang = req.query.lang || "all";
   const rowsPerPage = parseInt(req.query.rowsPerPage) || 50;
